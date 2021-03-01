@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
+
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+.App{
+     max-width: 1140px;
+     margin: 0 auto;
+}
+html {
+	scroll-behavior: smooth;
+     background: #E5E5E5;
+}
+img {
+	max-width: 100%;
+}
+.flex{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.flex-column{
+     display: flex;
+     flex-direction: column;
+}
+.col-12 {
+	width: 100%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-2 {
+	width: 16.66%;
+}
+.col-1 {
+	width: 8.33%;
+}
+
+@mixin font($size, $weight, $line: 1, $family: "Lato") {
+	font-size: $size;
+	font-weight: $weight;
+	font-family: $family, sans-serif;
+	line-height: $line;
+	font-style: normal;
+}
